@@ -1,0 +1,32 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtual environments
+.venv/
+env/
+venv/
+key/
+*/bin/activate
+
+# Data outputs
+data/
+
+# Logs
+scraper.log
+
+# Environment files
+.env
+
+# KDE folder metadata
+.directory
+
+# IDE/editor
+.vscode/
+.idea/
+
+# Backup/temp files
+*~
+.*.sw?
+*.bak
