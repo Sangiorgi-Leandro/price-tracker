@@ -50,8 +50,8 @@ Follow these steps to get the project up and running on your local machine:
 1.  **Clone the repository:**
 
     ```bash
-    git clone [https://github.com/](https://github.com/)Sangiorgi-Leandro>/price-tracker.git
-    cd price-tracker
+    git clone https://github.com/Sangiorgi-Leandro/price-tracker.git
+cd price-tracker
     ```
 
 2.  **(Recommended) Create and activate a virtual environment:**
