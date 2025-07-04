@@ -1,6 +1,7 @@
 import logging
 from logging.handlers import RotatingFileHandler
 
+
 def setup_logging():
     """
     Configures the application-wide logging system.

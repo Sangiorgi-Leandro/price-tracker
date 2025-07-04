@@ -1,12 +1,16 @@
 import re
-from decimal import Decimal, InvalidOperation # Used for precise monetary calculations and error handling
-from bs4 import BeautifulSoup               # HTML parsing library
-from http_client import HTTPClient          # Custom HTTP client for requests
-from config import SCRAPERS                 # Project configuration, including target URLs
+from decimal import (
+    Decimal,
+    InvalidOperation,
+)  # Used for precise monetary calculations and error handling
+from bs4 import BeautifulSoup  # HTML parsing library
+from http_client import HTTPClient  # Custom HTTP client for requests
+from config import SCRAPERS  # Project configuration, including target URLs
 
 # Regex to find common European price formats (e.g., 1.234,56 or 123,45).
 # It captures digits, optional thousands separators (periods), and two decimal places (comma-separated).
-PRICE_REGEX = re.compile(r'(\d{1,3}(?:\.\d{3})*,\d{2})')
+PRICE_REGEX = re.compile(r"(\d{1,3}(?:\.\d{3})*,\d{2})")
+
 
 def parse_price(text: str) -> Decimal | None:
     """
@@ -23,12 +27,12 @@ def parse_price(text: str) -> Decimal | None:
                         otherwise None.
     """
     # Clean the input text by replacing non-breaking spaces with standard spaces and stripping whitespace.
-    clean_text = text.replace('\u00a0', ' ').replace('&nbsp;', ' ').strip()
-    
+    clean_text = text.replace("\u00a0", " ").replace("&nbsp;", " ").strip()
+
     # Find all occurrences of the defined price pattern in the cleaned text.
     matches = PRICE_REGEX.findall(clean_text)
     if not matches:
-        return None # No price patterns found
+        return None  # No price patterns found
 
     # Attempt to find the most relevant price by iterating from the end.
     # This logic assumes that for a single product, the price displayed will usually be under 1000.
@@ -36,8 +40,10 @@ def parse_price(text: str) -> Decimal | None:
         try:
             # Normalize the price string: remove thousands separators (periods) and
             # replace the decimal comma with a period for Decimal conversion.
-            val = Decimal(raw_price_str.replace('.', '').replace(',', '.'))
-            if val < 1000: # Prioritize values under 1000, common for single item prices.
+            val = Decimal(raw_price_str.replace(".", "").replace(",", "."))
+            if (
+                val < 1000
+            ):  # Prioritize values under 1000, common for single item prices.
                 return val
         except InvalidOperation:
             # Continue if a matched string can't be converted to a valid Decimal.
@@ -45,12 +51,13 @@ def parse_price(text: str) -> Decimal | None:
 
     # Fallback: If no price under 1000 is found, return the very last valid price found.
     # This handles cases where the main product price might be over 1000, or other prices were present.
-    if matches: # Ensure there's at least one match left after the loop
+    if matches:  # Ensure there's at least one match left after the loop
         try:
-            return Decimal(matches[-1].replace('.', '').replace(',', '.'))
+            return Decimal(matches[-1].replace(".", "").replace(",", "."))
         except InvalidOperation:
-            return None # Still invalid
-    return None # No valid prices found after all attempts
+            return None  # Still invalid
+    return None  # No valid prices found after all attempts
+
 
 async def scrape_phoneclick(client: HTTPClient) -> dict | None:
     """
@@ -65,10 +72,10 @@ async def scrape_phoneclick(client: HTTPClient) -> dict | None:
     """
     # Get Phoneclick-specific configuration, including the target URL.
     cfg = SCRAPERS["phoneclick"]
-    
+
     # Fetch the HTML content of the Phoneclick product page.
     html = await client.fetch(cfg["url"])
-    
+
     # Parse the HTML content with BeautifulSoup.
     soup = BeautifulSoup(html, "lxml")
 
@@ -94,7 +101,7 @@ async def scrape_phoneclick(client: HTTPClient) -> dict | None:
         candidate_prices = []
         # Iterate through all visible text strings on the page.
         for text_string in soup.stripped_strings:
-            if "€" in text_string: # Check if the euro symbol is present.
+            if "€" in text_string:  # Check if the euro symbol is present.
                 # Attempt to parse a price from this text string.
                 val = parse_price(text_string)
                 if val is not None:
@@ -110,8 +117,8 @@ async def scrape_phoneclick(client: HTTPClient) -> dict | None:
 
     # Return a dictionary with the scraped data.
     return {
-        "site":  cfg["site"],
+        "site": cfg["site"],
         "title": title,
         "price": price_str,
-        "url":   cfg["url"],
+        "url": cfg["url"],
     }

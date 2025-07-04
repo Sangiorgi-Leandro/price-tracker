@@ -1,35 +1,30 @@
-2025-07-04 09:42:20,785 [INFO] __main__: 🚀 Starting price-tracker
-2025-07-04 09:42:27,848 [INFO] http_client: Fetched https://www.amazon.it/dp/B0C78GHQRJ/ [status=200]
-2025-07-04 09:42:27,912 [INFO] http_client: Fetched https://www.phoneclick.it/samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
-2025-07-04 09:42:28,039 [INFO] http_client: Fetched https://www.teknozone.it/smartphone-samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
-2025-07-04 09:42:29,977 [INFO] __main__: 💾 Saved JSON to data/latest_prices.json
-2025-07-04 09:42:29,977 [INFO] __main__: 📊 Appended 3 records to data/price_history.csv
-2025-07-04 09:42:29,977 [INFO] __main__: ✅ Tracking completed
-2025-07-04 09:45:06,539 [INFO] __main__: 🚀 Starting price-tracker
-2025-07-04 09:45:15,027 [INFO] http_client: Fetched https://www.phoneclick.it/samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
-2025-07-04 09:45:15,040 [INFO] http_client: Fetched https://www.amazon.it/dp/B0C78GHQRJ/ [status=200]
-2025-07-04 09:45:15,143 [INFO] http_client: Fetched https://www.teknozone.it/smartphone-samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
-2025-07-04 09:45:17,427 [INFO] __main__: 💾 Saved JSON to data/latest_prices.json
-2025-07-04 09:45:17,427 [INFO] __main__: 📊 Appended 3 records to data/price_history.csv
-2025-07-04 09:45:17,427 [INFO] __main__: ✅ Tracking completed
-2025-07-04 09:48:58,786 [INFO] __main__: 🚀 Starting price-tracker
-2025-07-04 09:49:04,672 [INFO] http_client: Fetched https://www.amazon.it/dp/B0C78GHQRJ/ [status=200]
-2025-07-04 09:49:04,740 [INFO] http_client: Fetched https://www.phoneclick.it/samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
-2025-07-04 09:49:04,885 [INFO] http_client: Fetched https://www.teknozone.it/smartphone-samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
-2025-07-04 09:49:06,756 [INFO] __main__: 💾 Saved JSON to data/latest_prices.json
-2025-07-04 09:49:06,756 [INFO] __main__: 📊 Appended 3 records to data/price_history.csv
-2025-07-04 09:49:06,757 [INFO] __main__: ✅ Tracking completed
-2025-07-04 09:53:45,614 [INFO] __main__: 🚀 Starting price-tracker
-2025-07-04 09:53:51,134 [INFO] http_client: Fetched https://www.amazon.it/dp/B0C78GHQRJ/ [status=200]
-2025-07-04 09:53:51,143 [INFO] http_client: Fetched https://www.phoneclick.it/samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
-2025-07-04 09:53:51,257 [INFO] http_client: Fetched https://www.teknozone.it/smartphone-samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
-2025-07-04 09:53:53,337 [INFO] __main__: 💾 Saved JSON to data/latest_prices.json
-2025-07-04 09:53:53,337 [INFO] __main__: 📊 Appended 3 records to data/price_history.csv
-2025-07-04 09:53:53,337 [INFO] __main__: ✅ Tracking completed
-2025-07-04 09:54:26,392 [INFO] __main__: 🚀 Starting price-tracker
-2025-07-04 09:54:33,060 [INFO] http_client: Fetched https://www.amazon.it/dp/B0C78GHQRJ/ [status=200]
-2025-07-04 09:54:33,100 [INFO] http_client: Fetched https://www.phoneclick.it/samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
-2025-07-04 09:54:33,251 [INFO] http_client: Fetched https://www.teknozone.it/smartphone-samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
-2025-07-04 09:54:35,085 [INFO] __main__: 💾 Saved JSON to data/latest_prices.json
-2025-07-04 09:54:35,086 [INFO] __main__: 📊 Appended 3 records to data/price_history.csv
-2025-07-04 09:54:35,086 [INFO] __main__: ✅ Tracking completed
+2025-07-04 11:12:32,933 [INFO] __main__: 🚀 Starting price-tracker
+2025-07-04 11:12:38,707 [INFO] http_client: Fetched https://www.amazon.it/dp/B0C78GHQRJ/ [status=200]
+2025-07-04 11:12:38,839 [INFO] http_client: Fetched https://www.phoneclick.it/samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
+2025-07-04 11:12:38,941 [INFO] http_client: Fetched https://www.teknozone.it/smartphone-samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
+2025-07-04 11:12:40,793 [INFO] __main__: 💾 Saved JSON to data/latest_prices.json
+2025-07-04 11:12:40,793 [INFO] __main__: 📊 Appended 3 records to data/price_history.csv
+2025-07-04 11:12:40,793 [INFO] __main__: ✅ Tracking completed
+2025-07-04 11:20:54,540 [INFO] __main__: 🚀 Starting price-tracker
+2025-07-04 11:21:00,925 [INFO] http_client: Fetched https://www.amazon.it/dp/B0C78GHQRJ/ [status=200]
+2025-07-04 11:21:01,004 [INFO] http_client: Fetched https://www.phoneclick.it/samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
+2025-07-04 11:21:01,077 [INFO] http_client: Fetched https://www.teknozone.it/smartphone-samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
+2025-07-04 11:21:03,000 [INFO] __main__: 💾 Saved JSON to data/latest_prices.json
+2025-07-04 11:21:03,000 [INFO] __main__: 📊 Appended 3 records to data/price_history.csv
+2025-07-04 11:21:03,000 [INFO] __main__: ✅ Tracking completed
+2025-07-04 11:24:36,601 [INFO] __main__: 🚀 Starting price-tracker
+2025-07-04 11:24:43,463 [INFO] scraper.amazon: Scraping Amazon product from: https://www.amazon.it/dp/B0C78GHQRJ/
+2025-07-04 11:24:43,766 [INFO] http_client: Fetched https://www.amazon.it/dp/B0C78GHQRJ/ [status=200]
+2025-07-04 11:24:43,818 [INFO] http_client: Fetched https://www.phoneclick.it/samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
+2025-07-04 11:24:43,967 [INFO] http_client: Fetched https://www.teknozone.it/smartphone-samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
+2025-07-04 11:24:45,834 [INFO] __main__: 💾 Saved JSON to data/latest_prices.json
+2025-07-04 11:24:45,834 [INFO] __main__: 📊 Appended 3 records to data/price_history.csv
+2025-07-04 11:24:45,834 [INFO] __main__: ✅ Tracking completed
+2025-07-04 11:27:21,328 [INFO] __main__: 🚀 Starting price-tracker
+2025-07-04 11:27:25,718 [INFO] scraper.amazon: Scraping Amazon product from: https://www.amazon.it/dp/B0C78GHQRJ/
+2025-07-04 11:27:26,057 [INFO] http_client: Fetched https://www.amazon.it/dp/B0C78GHQRJ/ [status=200]
+2025-07-04 11:27:26,058 [INFO] http_client: Fetched https://www.phoneclick.it/samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
+2025-07-04 11:27:26,200 [INFO] http_client: Fetched https://www.teknozone.it/smartphone-samsung/galaxy-s23/samsung-galaxy-s23-5g-256gb-8gb-ram-dual-sim-black-europa [status=200]
+2025-07-04 11:27:27,952 [INFO] __main__: 💾 Saved JSON to data/latest_prices.json
+2025-07-04 11:27:27,952 [INFO] __main__: 📊 Appended 3 records to data/price_history.csv
+2025-07-04 11:27:27,952 [INFO] __main__: ✅ Tracking completed
