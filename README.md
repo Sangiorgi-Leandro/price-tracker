@@ -21,6 +21,7 @@ This project leverages modern Python features for efficient and robust web scrap
 
 ## 📂 Project Structure
 ```
+price_tracker/
 ├── config.py             # Centralized configuration for URLs, headers, timeouts, and environment variable overrides.
 ├── logger.py             # Sets up application-wide logging with a RotatingFileHandler.
 ├── http_client.py        # A robust aiohttp.ClientSession wrapper with Tenacity for retries.
