@@ -170,3 +170,10 @@ Thank you for your contribution!
 ## 📜 License
 This project is licensed under the **MIT License**. Feel free to use, modify, and distribute it for personal or commercial purposes.
 
+---
+
+## Author
+Leandro Sangiorgi  
+GitHub: [github.com/Sangiorgi-Leandro](https://github.com/Sangiorgi-Leandro)  
+For inquiries, please open an issue or contact me via GitHub.
+
